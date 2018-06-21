@@ -7,37 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maths game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/game.css" type='text/css'>
 </head>
 
 <body>
+    <div class="container-fluid">
+        <!--<div class="nav navbar-header">-->
+        <!--    <a href="#" class="navbar-brand hidden-sm hidden-xs"><img id="matt-logo" src="img/matt.JPG" alt="logo" height="50px"></a>-->
+        <!--</div>-->
+        <header class='container-fluid'>
+            <div class="row text-center">
+                <h1>Welcome to Stein's awesome Matt's game</h1>
+            </div>
+        </header>
 
-    <header>
-        <div class="row text-center">
-            <h1>Welcome to Stein's awesome math game</h1>
+        <div class="row container-fluid">
+            <div class="col-sm-8 text-center section-question">
+                <div class="row">
+                    <div class="col-sm-12 type-of-game-buttons">
+                        <button class="btn btn-hover btn-danger" onclick="setAddGame()">Addition</button>
+                        <button class="btn btn-hover btn-success" onclick="setSubGame()">Subtraction</button>
+                        <button class="btn btn-hover btn-info" onclick="setMulGame()">Multiplication</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 question-and-answer">
+                        <h2 id="question"></h2>
+
+                        <form id="quizForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="add">
+
+                            Enter answer: <input type="number" name="answer">
+                            <input type="hidden" name="rightAnswer">
+                            <input type="submit" value="submit">
+
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 start-game-section">
+                        <div class="div">Want a place in the FOOTER OF FAME?<br>Cliick on Start Game and you will get 60 seconds <br>to answer as many possible answers right. Good luck!</div>
+                        <div class="row btn-row">
+                            <button id="startGameBtn" class="btn btn-hover btn-primary col d-inline" onclick="startGame()">Start Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="background-score" class="col-sm-4 text-center section-score">
+                <div id="score-title">Your score is:</div>
+                <div id="score">0</div>
+                <div id="scoreMessage"></div>
+                <div class="timerBox"><span id="timerBox"></span> seconds left</div>
+            </div>
         </div>
-    </header>
 
-    <div class="row">
-        <div class="col-sm-8 text-center">
-            <button onclick="setAddGame()">Addition</button>
-            <button onclick="setSubGame()">Subtraction</button>
-            <button onclick="setMulGame()">Multiplication</button>
-            
-            <p id="question"></p>
-
-            <form id="quizForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="add">
-
-                Enter answer: <input type="number" name="answer">
-                <input type="hidden" name="rightAnswer">
-                <input type="submit" value="submit">
-
-            </form>
-        </div>
-        <div class="col-sm-4 text-center">
-            <h3>Your score is: <span id="score"></span></h3>
-        </div>
+        <footer class="container-fluid">
+            <div class="row text-center">
+                <div id="footer-heading">Footer of fame</div>
+            </div>
+            <div id="scoreBoard" class="row text-center">
+                
+            </div>
+        </footer>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
 </body>
 

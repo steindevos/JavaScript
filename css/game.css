@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo: 100,200,300,400,500,600,700');
+
+
+/*// ------------------------------------- header */
+header {
+    background-color: black;
+    min-height: 80px; 
+    text-align: center; 
+}
+
+header h1 {
+    color: #f0f0f0;
+    top: 20px;
+    left: 120px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif; 
+}
+
+/*#matt-logo {*/
+/*    border-radius: 50%; */
+    /*animation: rotate 2s linear infinite;*/
+/*    margin-left: 30px;*/
+/*}*/
+
+/*@keyframes rotate {*/
+/*            0% {*/
+/*                transform: rotate(0deg) scale(1);*/
+/*            }*/
+/*            50% {*/
+/*                transform: rotate(180deg) scale(1.3);*/
+/*            }*/
+/*            100% {*/
+/*                transform: rotate(360deg) scale(1);*/
+/*            }*/
+/*        }*/
+
+
+
+
+/*-------------------------------------------- section*/
+.section-score {
+    background-color: orange;
+    min-height: 400px; 
+}
+
+.section-question {
+    background-image: url("../img/math.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.type-of-game-buttons {
+    top: 60px; 
+}
+
+.question-and-answer {
+    top: 110px; 
+}
+
+#question {
+    font-weight: 900; 
+}
+
+.start-game-section {
+    top: 160px;
+    font-weight: 600; 
+    font-size: 1rem;
+    padding-bottom: 20px; 
+}
+#startGameBtn {
+    margin-top: 10px;
+}
+
+
+#score-title {
+    padding-top: 40px;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#score {
+    font-size: 15rem;
+}
+
+#scoreMessage {
+    font-weight: 900; 
+    font-size: 3rem;
+}
+
+.timerBox {
+    font-weight: 200; 
+    font-size: 3rem;
+}
+#timerBox {
+    font-weight: 200; 
+    font-size: 3rem;
+}
+
+/*----------------------------------------------footer*/
+footer {
+    background-color: #4C4C4C;
+    min-height: 80px; 
+}
+
+
+#footer-heading {
+    font-size: 3rem;
+    text-transform: uppercase; 
+    font-weight: 600; 
+    letter-spacing: 18px; 
+    color: 	#B8B8B8; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+#highscore {
+    font-size: 2rem;
+    text-transform: uppercase; 
+    font-weight: 600; 
+    letter-spacing: 12px; 
+    color: #f0f0f0; 
+    font-family: 'Roboto', sans-serif; 
+}
+#user-name {
+    font-size: 1rem;
+    text-transform: uppercase; 
+    font-weight: 300; 
+    letter-spacing: 12px; 
+    color: #f0f0f0; 
+    font-family: 'Roboto', sans-serif;
+}
