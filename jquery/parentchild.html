@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>THIS IS THE HEADING</h3>
+        <div class="container_child">Test</div>
+        <div class="container_child child2">test</div>
+        <div class="container_child">test</div>
+        
+        
+        <button class="btn btn-danger bottom-btn">click me</button>
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            // $(".container_child").parent().css("font-size", "3rem").css("font-family", "sans-serif").css("color", "red"); 
+            
+            // $(".child2").prev().css("font-size", "3rem").css("font-family", "sans-serif").css("color", "red"); 
+            
+            $(".child2").next().css("font-size", "3rem").css("font-family", "sans-serif").css("color", "red"); 
+            
+           
+            })
+        })
+        
+    </script>
+</body>
+</html>

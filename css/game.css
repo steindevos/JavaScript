@@ -115,19 +115,27 @@ footer {
     font-family: 'Roboto', sans-serif; 
 }
 
-#highscore {
-    font-size: 2rem;
+#scoreBoard {
+    min-height: 72px; 
+}
+
+.highscore {
+    font-size: 3rem;
     text-transform: uppercase; 
     font-weight: 600; 
     letter-spacing: 12px; 
     color: #f0f0f0; 
     font-family: 'Roboto', sans-serif; 
 }
-#user-name {
+
+
+.user-name {
     font-size: 1rem;
     text-transform: uppercase; 
     font-weight: 300; 
     letter-spacing: 12px; 
     color: #f0f0f0; 
     font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px; 
 }
